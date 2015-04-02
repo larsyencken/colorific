@@ -80,6 +80,11 @@ through antialiasing are not present.
 Changelog
 ---------
 
+dev
+~~~
+
+- Fix: exit 0 when successfully invoked with args
+
 0.3.0
 ~~~~~
 
