@@ -104,6 +104,8 @@ class Application(object):
                 if options.save_palette:
                     save_palette_as_image(filename, palette)
 
+                sys.exit(0)
+
             sys.exit(1)
 
         if options.n_processes > 1:
