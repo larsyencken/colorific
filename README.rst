@@ -80,6 +80,11 @@ through antialiasing are not present.
 Changelog
 ---------
 
+dev
+~~~
+
+- Allow shades by setting --min-saturation=0
+
 0.3.0
 ~~~~~
 
