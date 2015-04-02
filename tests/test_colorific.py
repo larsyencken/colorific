@@ -33,6 +33,16 @@ class ExtractionTest(unittest.TestCase):
         found = [c.value for c in p.colors]
         self.assertEquals(found, expected)
 
+    def test_extraction_without_saturation_filter(self):
+        expected = [(0, 101, 185),
+                    (255, 255, 255),
+                    (187, 214, 236),
+                    (255, 0, 0)]
+        p = palette.extract_colors(self.filename, min_saturation=0)
+        found = [c.value for c in p.colors]
+        self.assertEquals(found, expected)
+        self.assertEquals(p.bgcolor.value, (0, 0, 0))
+
 
 class ConversionTest(unittest.TestCase):
     def setUp(self):
