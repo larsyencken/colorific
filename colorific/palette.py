@@ -248,7 +248,7 @@ def save_palette_as_image(filename, palette):
 
 
 def meets_min_saturation(c, threshold):
-    return colorsys.rgb_to_hsv(*norm_color(c.value))[1] > threshold
+    return colorsys.rgb_to_hsv(*norm_color(c.value))[1] >= threshold
 
 
 def autocrop(im, bgcolor):
